@@ -18,4 +18,11 @@ const user:User[] = userJsonFiltered.map(user => {
         phonenumber: Number(user.phone.replace(/-/g, "").replace("x", "").replace(" ",""))
     }
 });
-console.log(user);
+//console.log(user);
+
+let csvString = "name, email, website, phonenumber \n";
+user.map(userMap => {
+csvString += userMap.name + "," + userMap.email + "," + userMap.website + "," + userMap.phonenumber + "\n"
+})
+
+console.log(csvString);
