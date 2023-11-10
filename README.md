@@ -6,4 +6,3 @@
 - bring the result into csv format
 - write to file
 
-x
